@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import { formatDateString } from "@/lib/utils";
 import DeleteThread from "../forms/DeleteThread";
+
 
 interface Props {
   id: string;
@@ -39,7 +39,9 @@ function ThreadCard({
   comments,
   isComment,
 }: Props) {
-  return (
+  
+  
+    return (
     <article
       className={`flex w-full flex-col rounded-xl ${
         isComment ? "px-0 xs:px-7" : "bg-dark-2 p-7"
@@ -71,13 +73,16 @@ function ThreadCard({
 
             <div className={`${isComment && "mb-10"} mt-5 flex flex-col gap-3`}>
               <div className='flex gap-3.5'>
+              
                 <Image
                   src='/assets/heart-gray.svg'
                   alt='heart'
                   width={24}
                   height={24}
                   className='cursor-pointer object-contain'
+                  
                 />
+                
                 <Link href={`/thread/${id}`}>
                   <Image
                     src='/assets/reply.svg'
@@ -159,7 +164,7 @@ function ThreadCard({
             alt={community.name}
             width={14}
             height={14}
-            className='ml-1 rounded-full object-cover'
+            className='ml-1 rounded-full w-3 h-3 overflow-hidden'
           />
         </Link>
       )}

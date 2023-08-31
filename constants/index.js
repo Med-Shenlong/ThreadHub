@@ -33,12 +33,12 @@ export const sidebarLinks = [
 
 export const profileTabs = [
   { value: "threads", label: "Threads", icon: "/assets/reply.svg" },
-  { value: "réponses", label: "réponses", icon: "/assets/members.svg" },
-  { value: "étiqueté", label: "étiqueté", icon: "/assets/tag.svg" },
+  { value: "replies", label: "réponses", icon: "/assets/members.svg" },
+  { value: "tagged", label: "étiqueté", icon: "/assets/tag.svg" },
 ];
 
 export const communityTabs = [
   { value: "threads", label: "Threads", icon: "/assets/reply.svg" },
-  { value: "membres", label: "membres", icon: "/assets/members.svg" },
-  { value: "demandes", label: "demandes", icon: "/assets/request.svg" },
+  { value: "members", label: "membres", icon: "/assets/members.svg" },
+  { value: "requests", label: "demandes", icon: "/assets/request.svg" },
 ];
